@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "TrashPanda";
+  src: url("../fonts/TrashPanda-Italic.ttf");
+}
+
 #hoop{
     background-color:blue;
     width: 100px;
@@ -34,7 +39,13 @@
     width: 200px;
     height: 200px;
     background-color: gray;
+
+}
+
+#plastic {
+    background-image: url("http://66.media.tumblr.com/4d07cf1cf8ac31e9e1d73c5b66cfa92d/tumblr_mtyjmejB8d1qcdozto1_r1_500.gif");
 }
 #music{
     opacity:0;
 }
+

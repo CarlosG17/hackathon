@@ -15,10 +15,16 @@ $("#right").click(function(){
     game=true;
     verifyCollision();
     move();
+    setTimeout(function(){ 
+        console.log("hello");
+        localStorage.setItem("score", totalPoints);
+    }, 30000);
 });
 
 $("#shoot").click(function(){
-    dropBasketball();
+    if(game){
+        dropBasketball();
+    }
 });
 
 function move(){
@@ -35,26 +41,23 @@ function move(){
 }
 
 function dropBasketball(){
-    basketball.data("type", "glass")
     listenForCollision = true;
     basketball.animate({
         marginTop: "100%"
     }, 2000, function(){
         verifyCollision()
+        ball()
     });
 }
 
 function verifyCollision(){
-    console.log(plastic)
-    console.log(paper)
-    console.log(glass)
     
     var horizontalCollision;
     var verticalCollision;
     console.log(basketball.data())
 
     //lands in paper
-    if((basketball.position().left+25) > paper.position().left && (basketball.position().left+25) < (paper.position().left+100)){
+    if((basketball.position().left+25) > paper.position().left && (basketball.position().left+25) < (paper.position().left+200)){
         horizontalCollision=true;
         console.log("paper");
         if(basketball.data().type === "paper"){
@@ -63,8 +66,8 @@ function verifyCollision(){
         }
     }else
     
-    //lands in plastic
-    if((basketball.position().left+25) > plastic.position().left && (basketball.position().left+25) < (plastic.position().left+100)){
+    // //lands in plastic
+    if((basketball.position().left+25) > plastic.position().left && (basketball.position().left+25) < (plastic.position().left+200)){
         horizontalCollision=true;
         console.log("plastic")
         if(basketball.data().type === "plastic"){
@@ -74,8 +77,7 @@ function verifyCollision(){
     }else
     
     //lands in glass
-    if((basketball.position().left+25) > glass.position().left && (basketball.position().left+25) < (glass.position().left+100)){
-        console.log("ikoal")
+    if((basketball.position().left+25) > glass.position().left && (basketball.position().left+25) < (glass.position().left+200)){
         horizontalCollision=true;
         console.log("glass")
         if(basketball.data().type === "glass"){
@@ -83,12 +85,15 @@ function verifyCollision(){
             totalPoints+=10;
         }
     }
+    $("#counterValue").text("Points: " +totalPoints+ " ");
     
-    return;
 }
 
+function ball(){
+    basketball.data("type", trashTypes[Math.floor(Math.random()*trashTypes.length)])
+    basketball.text(basketball.data().type);
+    basketball.css("marginTop", "")
+}
+ball();
 
-var count = 0;
-$("#counterValue").text(" " +count+ " ");
-localStorage.setItem("score", 10);
-localStorage.getItem("score");
+$("#counterValue").text("Points: " +totalPoints+ " ");
