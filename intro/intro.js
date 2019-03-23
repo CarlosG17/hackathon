@@ -1,0 +1,3 @@
+$("#toInfo").click(function(){
+
+});

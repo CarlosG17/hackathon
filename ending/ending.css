@@ -1,0 +1,47 @@
+body{
+    background-image:url("end.gif"); 
+    font-family: 'Bowlby One SC', cursive;
+}
+
+#gameOver {
+    display: flex;
+    justify-content: center;
+    color:#121FA5;
+    font-size:30px;
+}
+
+#finalScore {
+    display: flex;
+    justify-content: center;
+    color:#121FA5;
+    font-size:20px;
+}
+#snoop, #spidey, #red {
+    height: 400px;
+    width: 400px;
+}
+
+#back {
+    background-color: orange;
+    border: none;
+    color: #121FA5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.goBack {
+    display: flex;
+    justify-content: center;
+}
+#music{
+    opacity:0;
+}
+
+#congrats {
+    display: flex;
+    justify-content: center;
+    color:#121FA5;
+}

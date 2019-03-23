@@ -1,0 +1,39 @@
+body{
+    background-image:url("nyc-skyline.jpg"); 
+    font-family: 'Bowlby One SC', cursive;
+}
+
+#titleOne, #small, #dance, #introButton{
+    display: flex;
+    justify-content: center;
+    color:#121FA5;
+}
+#titleOne{
+    font-size:40px;
+}
+#small,#introButton{
+    background-color:orange;
+    border-radius:6000px;
+}
+
+#input {
+    display: flex;
+    justify-content: center;
+}
+#toInfo {
+    font-family: 'Bowlby One SC', cursive;
+}
+.trash,.sign{
+    margin-left:20px;
+    height:200px;
+    width:200px;
+}
+
+#continue {
+    color:#121FA5;
+}
+.continue {
+    display: flex;
+    justify-content: center;
+    color:#121FA5;
+}

@@ -1,0 +1,37 @@
+#hoop{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right{
+    position: absolute;
+    bottom: 100px;
+}
+#shoot{
+    position: absolute;
+    bottom: 70px;
+}
+
+#basketball{
+    background-color: orange;
+    border-radius: 100%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#bins{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+}
+.bin{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
