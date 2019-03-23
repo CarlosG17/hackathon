@@ -61,6 +61,7 @@ button{
 }
 .paper{
     background-image: url("paper.png");
+    background-position:center 0%;
     background-size:60%;
     background-repeat:no-repeat;
 }
@@ -106,4 +107,11 @@ body{
 #counterValue, #facts, .bin{
     font-family: 'Bowlby One SC', cursive;
     color: #121FA5;
+}
+
+#factsContainer{
+    display: flex;
+}
+#facts{
+    margin-left: 20px;
 }

@@ -48,7 +48,7 @@ function move(){
 function dropBasketball(){
     basketball.animate({
         marginTop: "50%"
-    }, 400, function(){
+    }, 300, function(){
         verifyCollision();
         ball();
     });
