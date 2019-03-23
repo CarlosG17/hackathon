@@ -7,12 +7,12 @@ var facts = ["Nine-tenths of all solid waste in the United States does not get r
 var game = false;
 var totalPoints = 0;
 
-var basketball = $("#basketball")
+var basketball = $("#basketball");
 var paper = $("#paper");
 var plastic = $("#plastic");
 var glass = $("#glass");
 
-var trashTypes=["paper", "plastic", "glass"]
+var trashTypes=["paper", "plastic", "glass"];
 
 $("#start").click(function(){
     if(game===false){
