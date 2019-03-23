@@ -1,5 +1,7 @@
 body{
-    background-color:white;
+    background-image:url("waste.jpg"); 
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 .jumbotron{
@@ -22,4 +24,11 @@ h1{
 
 btn {
     margin-top:40px;
+}
+.container{
+    opacity:0.8;
+}
+.wording{
+      color:red;
+      opacity:1;
 }

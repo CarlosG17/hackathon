@@ -1,3 +1,1 @@
-$("#back").click(function(){
-    
-});
+localStorage.getItem("score");
