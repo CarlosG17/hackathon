@@ -1,23 +1,29 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Trashketball</title>
         <link rel="stylesheet" href="game.css" type="text/css"/>
-
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
     </head>
     <body>
-        <p id="counterValue">Points: 0</p>
-        <div id="hoop">
-                <div id="basketball"></div>
-            </div>
-    
-            <div id="bins">
-                <div class="bin" id="paper">Paper</div>
-                <div class="bin" id="plastic">Plastic</div>
-                <div class="bin" id="glass">Glass</div>
-            </div>
-            
-            <button id="right">Start game</button>
+        <p id="counterValue">Points: <span id="score">0</span></p>
+        <div>
+            <button id="start">Start game</button>
             <button id="shoot">Shoot</button>
+        </div>
+        
+        <div id="facts"></div>
+        
+        <div id="hoop">
+            <div id="basketball"></div>
+        </div>
+    
+        <div id="bins">
+            <div class="bin" id="paper">Paper</div>
+            <div class="bin" id="plastic">Plastic</div>
+            <div class="bin" id="glass">Glass</div>
+        </div>
+
         
                 <!-- <div id= music>-->
         <!-- <audio controls autoplay loop>-->

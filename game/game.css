@@ -4,29 +4,39 @@
 }
 
 #hoop{
-    background-color:blue;
+    background-image:url("racoonHands.png");
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-
+button{
+    margin: 5px;
+}
 #right{
     position: absolute;
     bottom: 100px;
 }
-#shoot{
-    position: absolute;
-    bottom: 70px;
+#shoot, #start{
+    text-decoration: none;
+    background-color: orange;
+    border: none;
+    color: #121FA5;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 #basketball{
-    background-color: orange;
     border-radius: 100%;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
+    transform:translateY(90px);
 }
 
 #bins{
@@ -36,16 +46,64 @@
     height: 100%;
 }
 .bin{
-    width: 200px;
-    height: 200px;
-    background-color: gray;
-
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    position: relative;
+    top: -200px;
+    border: 2px solid black;
 }
 
+#paper {
+    background-image: url("paper.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.paper{
+    background-image: url("paper.png");
+    background-size:60%;
+    background-repeat:no-repeat;
+}
 #plastic {
-    background-image: url("http://66.media.tumblr.com/4d07cf1cf8ac31e9e1d73c5b66cfa92d/tumblr_mtyjmejB8d1qcdozto1_r1_500.gif");
+    background-image: url("plastic.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.plastic{
+    background-image: url("plastic.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+#glass {
+    background-image: url("glass.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.glass{
+    background-image: url("glass.png");
+    background-size:100%;
+    background-repeat:no-repeat;
 }
 #music{
     opacity:0;
 }
 
+p{
+    font-size:20px;
+}
+
+#score{
+    font-family: "TrashPanda";
+}
+
+body{
+    background-image:url("gameBack.jpg"); 
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#counterValue, #facts, .bin{
+    font-family: 'Bowlby One SC', cursive;
+    color: #121FA5;
+}

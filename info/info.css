@@ -19,6 +19,7 @@ body{
 
 p{
     font-size:25px;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 h1{
@@ -37,3 +38,4 @@ btn {
 .wording{
       color:red;
 }
+
